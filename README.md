@@ -2,7 +2,7 @@
 
 Terminal-based weather telemetry fetcher querying OpenWeatherMap REST endpoints for real-time localized diagnostics.
 
-## Overview / Value Proposition
+## Overview
 
 Checking quick atmospheric metrics during terminal sessions often forces developers to open resource-heavy browsers or deal with unformatted payload outputs. `weather-fetch-cli` provides immediate, formatted weather metrics directly inside stdout without context-switching away from your active terminal environment. It handles authentication state, missing credentials, standard API status codes, and networking failures cleanly.
 
@@ -83,8 +83,8 @@ weather-fetch-cli/
 
 ## Roadmap
 
-[] Type Stubbing & Strict Annotations: Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
+[ ] Type Stubbing & Strict Annotations: Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
 
-[] Async Network Migration: Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
+[ ] Async Network Migration: Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
 
-[] Custom Config Presets: Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
+[ ] Custom Config Presets: Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
