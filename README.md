@@ -83,8 +83,8 @@ weather-fetch-cli/
 
 ## Roadmap
 
-[ ] Type Stubbing & Strict Annotations: Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
+**[ ] Type Stubbing & Strict Annotations:** Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
 
-[ ] Async Network Migration: Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
+**[ ] Async Network Migration:** Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
 
-[ ] Custom Config Presets: Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
+**[ ] Custom Config Presets:** Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
