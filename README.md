@@ -52,21 +52,22 @@ Checking quick atmospheric metrics during terminal sessions often forces develop
    ```
 
 ## Local Setup via Virtual Environment
-
-### Clone and enter directory
+```text
+# Clone and enter directory
 git clone [https://github.com/your-username/weather-fetch-cli.git](https://github.com/your-username/weather-fetch-cli.git)
 cd weather-fetch-cli
 
-### Create and activate virtual environment
+# Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-### Install dependencies
+# Install dependencies
 pip install requests python-dotenv
 
-### Set credentials and execute
+# Set credentials and execute
 echo "OPENWEATHER_API_KEY=your_actual_api_key_here" > .env
 python main.py
+```
 
 ## Repository Structure
 ```text
@@ -82,8 +83,8 @@ weather-fetch-cli/
 
 ## Roadmap
 
-Type Stubbing & Strict Annotations: Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
+[] Type Stubbing & Strict Annotations: Expand internal structural payload typing using TypedDict models to replace untyped dict dictionary hints.
 
-Async Network Migration: Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
+[] Async Network Migration: Refactor network operations to httpx or aiohttp to allow simultaneous queries across multiple geographic targets.
 
-Custom Config Presets: Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
+[] Custom Config Presets: Implement home directory configuration loading (~/.config/weather-fetch/config.json) to save default temperature units (Metric, Imperial, Standard) and default target locations.
